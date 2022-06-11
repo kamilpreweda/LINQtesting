@@ -15,8 +15,10 @@
                 from o in listOfObjects
                 select o.InsantceNumber;
 
+            var immediate = result.ToList();
+
             Console.WriteLine("Uruchamianie pętli foreach");
-            foreach (var number in result)
+            foreach (var number in immediate)
             {
                 Console.WriteLine($"Zapis nr {number}");
             }
